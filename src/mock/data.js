@@ -2,8 +2,8 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
+  title: 'Kana Moore | Data Analyst', // e.g: 'Name | Developer'
+  lang: 'en, jp, ch', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
 
@@ -33,9 +33,9 @@ export const projectsData = [
     img: 'sql-hr.png',
     title: 'SQL Project - Employee Database Query',
     info:
-      'I designed the tables to hold data in the CSVs, imported the CSVs into a SQL database, and answered questions about the HR data. After retriving the data, I imported the SQL database into Pandas and visualized data using Python.',
+      'I designed the SQL tables to hold data, imported the CSV files into a SQL database, and wrote SQL queries to answer HR questions. After the analysis, I used Python to vizualize data using queried data from a SQL database.',
     info2:
-      'Used Technologies: PostgreSQL, Python(pandas, matplotlib), SQL Alchemy, Jupyter Notebook, Git',
+      'Technologies Used: PostgreSQL, Python(pandas, matplotlib), SQL Alchemy, Jupyter Notebook',
     url: 'https://github.com/kanamoore/sql-challenge',
     repo: '', // if no repo, the button will not show up
   },
@@ -46,16 +46,39 @@ export const projectsData = [
     info:
       'I built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.',
     info2:
-      'Used Technologies: Python(pandas), BeautifulSoup, Requests/Splinter, Jupyter Notebook, Git',
+      'Technologies Used: Python(pandas), BeautifulSoup, Requests/Splinter, Jupyter Notebook, Git',
     url: 'https://github.com/kanamoore/web-scraping-challenge',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'london_bus.PNG',
+    title: 'Tableau London Bus Perfomance Dashboard',
+    info:
+      'I used bus incidents data in London to create a interactive dashboard in Tableau. This dashboard will be able to answer questions such as "Which borough has the highest incidents?" and "Which season has the highest incidents?"',
+    info2: 'Technologies Used: Tableau',
+    url:
+      'https://public.tableau.com/profile/kana.moore#!/vizhome/LondonBusSafetyPerformance_15959702391910/Dashboard1',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'amazon.PNG',
+    title: 'Tableau Amazon Profit Dashboard',
+    info:
+      "As a part of a Makeover Monday project(2020 W25), I created a dashboard to show how Amazon's profit has changed. Just how huge are those profits? Find out using the dashboard! ",
+    info2: 'Technologies Used: Tableau',
+    url:
+      'https://public.tableau.com/profile/kana.moore#!/vizhome/2020W25AmazonsTinyProfits_15967271322000/Dashboard1',
     repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'tableau-dashboard.PNG',
     title: 'Tableau NYC Citi Bike Dashboard',
-    info: 'I created a Tableau dashboard to vizualize NYC Citi Bike riders data. ',
-    info2: 'Used Technologies: Tableau',
+    info:
+      'I created a Tableau dashboard to vizualize NYC Citi Bike rider data. This dashboard shows some important trends, such as popular ride times and demographics.',
+    info2: 'Technologies Used: Tableau',
     url: 'https://github.com/kanamoore/tableau-challenge',
     repo: '', // if no repo, the button will not show up
   },
@@ -65,7 +88,7 @@ export const projectsData = [
     title: 'US Immigration Data Analysis (Team Project) ',
     info:
       'We analyzed immigration data to show changes in immigration trends based on nationality, port of entry, age, income, and immigration status (refugee or asylum seekers). ',
-    info2: 'Used Technologies: Python(pandas, matplotlib, numpy), Jupyter Notebook',
+    info2: 'Technologies Used: Python(pandas, matplotlib, numpy), Jupyter Notebook',
     url: 'https://github.com/kanamoore/immigration_analysis_project',
     repo: '', // if no repo, the button will not show up
   },
@@ -74,8 +97,8 @@ export const projectsData = [
     img: 'matplotlib_drugs.jpg',
     title: "Matplotlib Pymaceuticals' Drug Analysis",
     info:
-      "I compared the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens and provide top-level summary of the study results.",
-    info2: 'Used Technologies: Python(pandas, matplotlib, numpy, scipy), Jupyter Notebook',
+      "I compared the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens and provided top-level summary of the study results.",
+    info2: 'Technologies Used: Python(pandas, matplotlib, numpy, scipy), Jupyter Notebook',
     url: 'https://github.com/kanamoore/matplotlib-challenge',
     repo: '', // if no repo, the button will not show up
   },
@@ -116,5 +139,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
