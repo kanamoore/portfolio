@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Kana Moore | Data Analyst', // e.g: 'Name | Developer'
   lang: 'en, jp, ch', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  description: 'An online showcase of my work', // e.g: Welcome to my website
 };
 
 // HERO DATA
@@ -101,6 +101,57 @@ export const projectsData = [
     info2: 'Technologies Used: Python(pandas, matplotlib, numpy, scipy), Jupyter Notebook',
     url: 'https://github.com/kanamoore/matplotlib-challenge',
     repo: '', // if no repo, the button will not show up
+  },
+];
+
+export const certificatesData = [
+  {
+    id: nanoid(),
+    title: "Playing with other people's Pandas",
+    description: 'Mine was not enough. Pandas, pandas, pandas!',
+    source: 'Udemy',
+    url: 'www.google.com',
+    date: new Date(),
+  },
+  {
+    id: nanoid(),
+    title: 'Querying the Meaning of Life with SQL',
+    description: "It's not what you think it is.",
+    source: 'Coursera',
+    url: 'www.google.com',
+    date: new Date(),
+  },
+  {
+    id: nanoid(),
+    title: 'Doopee Dappa Doo',
+    description: 'Kling khar ooglah makaboop, hooha hooha darpy darp.',
+    source: 'Free Code Camp',
+    url: 'www.google.com',
+    date: new Date(),
+  },
+  {
+    id: nanoid(),
+    title: 'Build Websites with Real Pythons',
+    description: 'Let the snake do the work.',
+    source: "Your mom's house",
+    url: 'www.google.com',
+    date: new Date(),
+  },
+  {
+    id: nanoid(),
+    title: 'Hadoop for Beginners and Asian Ladies with Weird Toenails',
+    description: 'They even make elephants uncomfortable.',
+    source: 'Udacity',
+    url: 'www.google.com',
+    date: new Date(),
+  },
+  {
+    id: nanoid(),
+    title: 'Count to 100 Using NUMBERS',
+    description: '1, 2, 3, 4, 5, 6, ...',
+    source: 'Trumph University Data Bootcamp',
+    url: 'www.google.com',
+    date: new Date(),
   },
 ];
 
